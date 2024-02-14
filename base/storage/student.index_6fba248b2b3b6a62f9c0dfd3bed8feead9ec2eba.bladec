@@ -1,0 +1,31 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('content'); ?>
+<table border="1">
+ <thead>
+ <th>ID</th>
+ <th>Name</th>
+ <th>Year of Birth</th>
+ <th>Phone Number</th>
+ <th>Action</th>
+
+ </thead>
+ <tbody>
+ <?php $__currentLoopData = $students; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $st): $loop = $this->incrementLoopIndices();  ?>
+ <tr>
+ <td><?php echo \htmlentities($st->id??'', ENT_QUOTES, 'UTF-8', false); ?></td>
+ <td><?php echo \htmlentities($st->name??'', ENT_QUOTES, 'UTF-8', false); ?></td>
+ <td><?php echo \htmlentities($st->year_of_birth??'', ENT_QUOTES, 'UTF-8', false); ?></td>
+ <td><?php echo \htmlentities($st->phone_number??'', ENT_QUOTES, 'UTF-8', false); ?></td>
+ <th>
+ <a href="">Sửa</a>
+ <a href="">Xóa</a>
+ </th>
+ </tr>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </tbody>
+
+</table>
+<?php $this->stopSection(); ?>
+
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layout.main'); } ?>
