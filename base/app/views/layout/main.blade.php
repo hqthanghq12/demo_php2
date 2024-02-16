@@ -13,7 +13,7 @@
     <header>
         <div class="header-main">
             <ul class="menu">
-                <li><a href="">Quản lý sinh viên</a></li>
+                <li><a href="{{route('list-student')}}">Quản lý sinh viên</a></li>
             </ul>
 
         </div>

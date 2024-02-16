@@ -1,9 +1,14 @@
 {
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e25ebe365f1da68d304af9a5ed4113fa",
     "packages": [
         {
             "name": "eftec/bladeone",
             "version": "4.11",
-            "version_normalized": "4.11.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/EFTEC/BladeOne.git",
@@ -26,12 +31,10 @@
                 "eftec/bladeonehtml": "Extension to create forms",
                 "ext-mbstring": "This extension is used if it's active"
             },
-            "time": "2024-02-04T12:24:42+00:00",
             "bin": [
                 "lib/bladeonecli"
             ],
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "eftec\\bladeone\\": "lib/"
@@ -60,12 +63,11 @@
                 "issues": "https://github.com/EFTEC/BladeOne/issues",
                 "source": "https://github.com/EFTEC/BladeOne/tree/4.11"
             },
-            "install-path": "../eftec/bladeone"
+            "time": "2024-02-04T12:24:42+00:00"
         },
         {
             "name": "phroute/phroute",
             "version": "v2.2.0",
-            "version_normalized": "2.2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrjgreen/phroute.git",
@@ -84,9 +86,7 @@
                 "php-coveralls/php-coveralls": "^2.5",
                 "phpunit/phpunit": "^9.0"
             },
-            "time": "2022-05-04T16:22:33+00:00",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "Phroute\\Phroute\\": "src/Phroute"
@@ -111,9 +111,16 @@
                 "issues": "https://github.com/mrjgreen/phroute/issues",
                 "source": "https://github.com/mrjgreen/phroute/tree/v2.2.0"
             },
-            "install-path": "../phroute/phroute"
+            "time": "2022-05-04T16:22:33+00:00"
         }
     ],
-    "dev": true,
-    "dev-package-names": []
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
